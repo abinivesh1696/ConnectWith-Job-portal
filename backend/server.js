@@ -20,6 +20,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB before handling requests
+// Log whether a Mongo URI is available (redact credentials) to aid debugging
+const rawMongoUri = process.env.MONGODB_URI;
+const redactedUri = rawMongoUri
+  ? rawMongoUri.replace(/(mongodb(\+srv)?:\/\/)(.*@)/, '$1****@')
+  : null;
+console.log('MONGODB_URI set:', !!rawMongoUri, 'Using:', redactedUri || '(none)');
+
 connectDB();
 
 // ====== Middleware ======

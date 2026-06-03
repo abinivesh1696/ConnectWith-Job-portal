@@ -30,18 +30,6 @@ export default function AuthLayout() {
           <Outlet />
         </div>
 
-        {/* Back Link */}
-        <div className="text-center mt-6">
-          <Link 
-            to="/" 
-            className="inline-flex items-center text-xs font-semibold text-slate-400 hover:text-white transition-colors duration-200"
-          >
-            <svg className="w-4 h-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            Back to Home
-          </Link>
-        </div>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout.jsx';
 import AuthLayout from './layouts/AuthLayout.jsx';
 import DashboardLayout from './layouts/DashboardLayout.jsx';
@@ -25,7 +25,7 @@ function App() {
     <Router>
       <Routes>
         <Route element={<AppLayout />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/companies" element={<CompanyList />} />
           <Route path="/companies/:id" element={<CompanyDetails />} />
           <Route path="/jobs" element={<JobsList />} />
@@ -33,6 +33,7 @@ function App() {
         </Route>
 
         <Route element={<AuthLayout />}>
+          <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Route>
@@ -103,6 +104,7 @@ function App() {
             }
           />
         </Route>
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );

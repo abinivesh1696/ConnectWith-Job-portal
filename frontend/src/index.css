@@ -3,22 +3,48 @@
 @layer base {
   :root {
     --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+    /* Light defaults */
+    --bg: #ffffff;
+    --text: #0f172a;
+    --panel-bg: rgba(255,255,255,0.85);
+    --panel-border: rgba(2,6,23,0.06);
+    --input-bg: #ffffff;
+    --input-text: #0f172a;
   }
-  
+
+  [data-theme="dark"] {
+    --bg: #0f172a;
+    --text: #f8fafc;
+    --panel-bg: rgba(30,41,59,0.7);
+    --panel-border: rgba(255,255,255,0.08);
+    --input-bg: #0f172a;
+    --input-text: #f8fafc;
+  }
+
   body {
     font-family: var(--font-sans);
-    background-color: #0f172a; /* Slate 900 */
-    color: #f8fafc; /* Slate 50 */
+    background-color: var(--bg);
+    color: var(--text);
     overflow-x: hidden;
+  }
+
+  input,
+  textarea,
+  select {
+    color: var(--input-text) !important;
+    caret-color: var(--input-text) !important;
+    background-color: var(--input-bg) !important;
   }
 
   /* Custom input autofill colors */
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus {
-    -webkit-text-fill-color: #f8fafc;
-    -webkit-box-shadow: 0 0 0px 1000px #1e293b inset;
-    transition: background-color 5000s ease-in-out 0s;
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-text-fill-color: #f8fafc !important;
+    -webkit-box-shadow: 0 0 0px 1000px #0f172a inset !important;
+    background-color: #0f172a !important;
+    transition: background-color 5000s ease-in-out 0s !important;
   }
 }
 

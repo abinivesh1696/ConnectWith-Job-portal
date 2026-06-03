@@ -25,7 +25,7 @@ Models and important fields (high level):
 - `company`: ObjectId -> Company
 - `location`: String
 - `type`: String enum ['full-time','part-time','contract','internship']
-- `salaryRange`: { min, max }
+- `salaryRange`: String or { min, max }
 - `description`: String
 - `requirements`: [String]
 - `postedBy`: ObjectId -> User (recruiter)

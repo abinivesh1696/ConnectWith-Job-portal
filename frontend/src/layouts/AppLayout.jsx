@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom';
 import useAuth from '../hooks/useAuth.js';
+import { useTheme } from '../context/ThemeContext.jsx';
 
 export default function AppLayout() {
   const auth = useAuth();
@@ -31,7 +32,7 @@ export default function AppLayout() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <Link to="/" className="flex items-center gap-2 group">
+              <Link to="/home" className="flex items-center gap-2 group">
                 <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
                   <span className="text-white font-extrabold text-lg tracking-wider">C</span>
                 </div>
@@ -44,7 +45,7 @@ export default function AppLayout() {
             {/* Desktop Nav Links */}
             <nav className="hidden md:flex items-center gap-1">
               <NavLink
-                to="/"
+                to="/home"
                 className={({ isActive }) =>
                   `px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                     isActive
@@ -83,6 +84,18 @@ export default function AppLayout() {
 
             {/* Right side buttons / Profile */}
             <div className="hidden md:flex items-center gap-3">
+              {/* Theme switch */}
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => useTheme().toggleTheme()}
+                  aria-label="Toggle theme"
+                  title="Toggle light / dark theme"
+                  className={`relative w-11 h-6 rounded-full transition-colors focus:outline-none ${useTheme().theme === 'dark' ? 'bg-blue-500' : 'bg-slate-700'}`}
+                >
+                  <span className={`absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform ${useTheme().theme === 'dark' ? 'translate-x-5' : ''}`}></span>
+                </button>
+                <span className="text-sm font-medium text-slate-200">{useTheme().theme === 'dark' ? 'Dark' : 'Light'}</span>
+              </div>
               {auth?.token ? (
                 <>
                   <Link
@@ -154,7 +167,7 @@ export default function AppLayout() {
         {mobileMenuOpen && (
           <div className="md:hidden glass-panel border-t border-slate-850 px-2 pt-2 pb-3 space-y-1 sm:px-3 animate-fade-in">
             <Link
-              to="/"
+              to="/home"
               onClick={() => setMobileMenuOpen(false)}
               className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800"
             >
