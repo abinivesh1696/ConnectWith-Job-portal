@@ -70,7 +70,7 @@ app.use('/api/jobs', jobRoutes);
 app.use('/api', applicationRoutes);
 
 // Serve React frontend in production
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV !== 'development') {
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
   const staticPath = path.join(__dirname, '../frontend/dist');
