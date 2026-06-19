@@ -4,6 +4,7 @@ const variants = {
   primary: 'bg-blue-600 hover:bg-blue-500 text-white shadow-md shadow-blue-600/10',
   secondary: 'bg-slate-900 border border-slate-800 text-slate-200 hover:bg-slate-800',
   ghost: 'text-slate-200 hover:text-white',
+  
 };
 
 export default function Button({ type = 'button', variant = 'primary', className = '', children, ...props }) {
@@ -18,4 +19,5 @@ export default function Button({ type = 'button', variant = 'primary', className
       {children}
     </button>
   );
+  
 }
