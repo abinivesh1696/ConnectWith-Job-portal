@@ -10,7 +10,8 @@ export default function InputField({
   icon,
   className = '',
   ...props
-}) {
+})
+{
   return (
     <div className="space-y-1.5">
       {label && (
