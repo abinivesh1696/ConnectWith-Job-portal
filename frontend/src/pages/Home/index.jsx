@@ -161,7 +161,7 @@ export default function Home() {
             <div className="w-12 h-12 rounded-xl bg-blue-950/60 border border-blue-500/20 flex items-center justify-center text-blue-400 text-xl font-bold mb-6">
               💼
             </div>
-            <h3 className="text-2xl font-bold text-white mb-2">Are you a Recruiter?</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">Are you a Recruiter ?</h3>
             <p className="text-slate-400 text-sm leading-relaxed mb-8">
               Post roles, build your company portal, manage candidate pipelines, and directly hire qualified tech talent without administrative barriers.
             </p>
@@ -171,7 +171,7 @@ export default function Home() {
               to={auth?.token ? (auth.user?.role === 'recruiter' ? '/jobs/new' : '/dashboard/user') : '/register'}
               className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-blue-600/90 hover:bg-blue-600 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/10 hover:shadow-blue-600/20 active:scale-98"
             >
-              Start Hiring
+              Start Hiring to new 
               <span>→</span>
             </Link>
           </div>
