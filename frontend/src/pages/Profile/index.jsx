@@ -74,7 +74,7 @@ export default function Profile() {
             {auth?.user?.role === 'jobseeker' && (
               <div className="border-t border-slate-900 pt-6 space-y-3">
                 <h3 className="text-xs font-extrabold text-white uppercase tracking-wider text-indigo-400">
-                  Technical Core Skills
+                  Technical Core Skills in Portfolio
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {mockSkills.map((skill, idx) => (
