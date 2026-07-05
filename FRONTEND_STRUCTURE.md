@@ -2,7 +2,7 @@
 
 Source: `frontend/src`
 
-Folders
+Folders :
 - `assets/` - images, icons, fonts
 - `components/` - reusable UI components
   - `common/` - Button, Input, Modal, Spinner, Layout primitives
@@ -26,7 +26,7 @@ Component hierarchy (example for Jobs page):
   - `JobList`
     - `JobCard` (for each job)
 
-Routing (high level)
+Routing (high level):
 - `/` -> `Home`
 - `/login` -> `Login`
 - `/register` -> `Register`
@@ -36,7 +36,7 @@ Routing (high level)
 - `/dashboard/recruiter` -> `RecruiterDashboard` (protected, role=recruiter)
 - `/dashboard/user` -> `UserDashboard` (protected, role=jobseeker)
 
-State management
+State management:
 - Minimal state with `useState` / `useReducer` for local UI
 - `AuthContext` provides `user`, `token`, `login`, `logout`
 - Data fetching via `services/api.js` (axios instance)
