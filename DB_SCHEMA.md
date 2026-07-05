@@ -1,6 +1,6 @@
 # Database Schema Design (Mongoose)
 
-Models and important fields (high level):
+Models and important fields (high level) :
 
 ## User
 - `name`: String, required

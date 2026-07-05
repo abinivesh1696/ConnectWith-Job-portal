@@ -1,6 +1,6 @@
 # ConnectWith - Architecture Overview
 
-This document describes the high-level architecture for the ConnectWith job portal.
+This document describes the high-level architecture for the ConnectWith job portal .
 
 - Frontend: React (Vite), React Router DOM, Axios
 - Backend: Node.js, Express.js
