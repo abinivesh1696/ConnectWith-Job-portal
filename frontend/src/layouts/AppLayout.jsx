@@ -251,7 +251,7 @@ export default function AppLayout() {
       <footer className="border-t border-slate-900/60 bg-slate-950/80 py-8 relative z-10">
         <div className="max-w-7xl mx-auto px-4 text-center sm:px-6 lg:px-8">
           <p className="text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} ConnectWith MERN Job Portal. Powered by stunning styling.
+            &copy; {new Date().getFullYear()} ConnectWith MERN Job Portal. All rights reserved.
           </p>
         </div>
       </footer>
