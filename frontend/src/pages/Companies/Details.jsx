@@ -1,15 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams, Link } from 'react-router-dom';
-import { companyService } from '../../services/companyService.js';
-import useAuth from '../../hooks/useAuth.js';
 
-export default function CompanyDetails() {
-  const { id } = useParams();
-  const [company, setCompany] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const auth = useAuth();
-  const navigate = useNavigate();
 
   useEffect(() => {
     let mounted = true;
@@ -161,7 +150,7 @@ export default function CompanyDetails() {
             {/* Description Block */}
             <div className="border-t border-slate-900 pt-6 space-y-3">
               <h3 className="text-xs font-extrabold text-white uppercase tracking-wider text-indigo-400">
-                Organization Overview
+                Organization Overviews
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
                 {company.description || 'No detailed background story provided yet. This company is a registered verified entity hiring technical staff.'}
