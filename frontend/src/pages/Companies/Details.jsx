@@ -1,4 +1,15 @@
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams, Link } from 'react-router-dom';
+import { companyService } from '../../services/companyService.js';
+import useAuth from '../../hooks/useAuth.js';
 
+export default function CompanyDetails() {
+  const { id } = useParams();
+  const [company, setCompany] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const auth = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     let mounted = true;

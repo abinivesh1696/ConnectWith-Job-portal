@@ -56,7 +56,7 @@ export default function CompanyCreate() {
       <div className="glass-panel border border-slate-800/85 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-6">
         <div>
           <h2 className="text-2xl font-extrabold text-white">Add Corporate Entity</h2>
-          <p className="text-xs text-slate-400 mt-1">Register a corporate company profile to link to job opportunity postings.</p>
+          <p className="text-xs text-slate-400 mt-1">Register to a corporate company profile to link to job opportunitys posting.</p>
         </div>
 
         {error && (
