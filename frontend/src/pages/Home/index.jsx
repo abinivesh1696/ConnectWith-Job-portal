@@ -36,7 +36,7 @@ export default function Home() {
 
         <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-none mb-6 animate-fade-in delay-100">
           Bridge the Gap Between <br className="hidden sm:inline" />
-          <span className="text-gradient">Talent & Opportunity</span>
+          <span className="text-gradient">Talent and Opportunity</span>
         </h1>
 
         <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in delay-200">
