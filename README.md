@@ -173,7 +173,7 @@ The app will be available at `http://localhost:5000`.
 - [ ] Email Notifications
 
 ## Contributing
-Please follow best practices and create pull requests for any changes.
+Please follow best practices and create pull requests for the any changes.
 
 ## License
 ISC
