@@ -136,7 +136,7 @@ CORS_ORIGIN=http://localhost:5173
 ```
 
 ## Deployment
-The backend can serve the built frontend in production. Build the frontend first, then start the backend server in a production environment.
+The backend can serve the built frontend in production. Build the frontend first, then start backend server in a production environment.
 
 ### Production build (manual)
 1. Build the frontend
