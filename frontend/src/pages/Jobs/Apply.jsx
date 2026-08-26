@@ -18,8 +18,8 @@ export default function JobApply() {
     return (
       <div className="max-w-md mx-auto py-16 text-center space-y-4">
         <span className="text-4xl">🔐</span>
-        <h4 className="text-lg font-bold text-white">Login required</h4>
-        <p className="text-xs text-slate-400">Please sign in to your jobseeker account to apply for this posting.</p>
+        <h4 className="text-lg font-bold text-white">Login Required</h4>
+        <p className="text-xs text-slate-400">Please SIGNIN to your jobseeker account to apply for this posting.</p>
         <Link to="/login" className="inline-block px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs transition-colors">Sign In</Link>
       </div>
     );
