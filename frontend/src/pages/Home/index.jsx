@@ -163,7 +163,7 @@ export default function Home() {
             </div>
             <h3 className="text-2xl font-bold text-white mb-2">Are you a Recruiter ?</h3>
             <p className="text-slate-400 text-sm leading-relaxed mb-8">
-              Post roles, build your company portal, manage candidate pipelines, and directly hire qualified tech talent without administrative barriers.
+              Post Roles, Build your company portal, Manage candidate pipelines, and Directly hire qualified tech talent without administrative barriers.
             </p>
           </div>
           <div>
