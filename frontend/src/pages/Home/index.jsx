@@ -31,7 +31,8 @@ export default function Home() {
       <section className="text-center max-w-4xl mx-auto py-12 relative">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-6 animate-fade-in">
           <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
-          Next Generation Job Connector
+          Next Generation Job Connector to user friendly
+        
         </div>
 
         <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-none mb-6 animate-fade-in delay-100">
