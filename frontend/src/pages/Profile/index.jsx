@@ -52,7 +52,7 @@ export default function Profile() {
           <div className="space-y-6">
             <div className="border-t border-slate-900 pt-5 space-y-4">
               <h3 className="text-xs font-extrabold text-white uppercase tracking-wider text-indigo-400">
-                Core Account Details
+                Core Account Details for verification 
               </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
